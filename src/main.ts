@@ -8,7 +8,6 @@ async function bootstrap() {
   .setTitle('API Documentation')
   .setDescription('The API description')
   .setVersion('1.0')
-  .addTag('user') // Optional: Tag your API with a category (e.g., user-related routes)
   .build();
 
 const document = SwaggerModule.createDocument(app, config);
