@@ -7,6 +7,8 @@ import { AdminModule } from './admin/admin.module';
 import configuration from './config/configuration';
 import { APP_INTERCEPTOR } from '@nestjs/core';
 import { ResponseInterceptor } from './util/interceptor';
+import { BrandaccountModule } from './brandaccount/brandaccount.module';
+import { NotificationModule } from './notification/notification.module';
 
 @Module({
   imports: [
@@ -20,6 +22,8 @@ import { ResponseInterceptor } from './util/interceptor';
       }),
     }),
     AdminModule,
+    BrandaccountModule,
+    NotificationModule,
   ],
   controllers: [AppController],
   providers: [
